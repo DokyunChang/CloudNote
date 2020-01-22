@@ -60,7 +60,8 @@ class NoteController extends Controller
                 'body' => request('body')
             ]);
 
-        return redirect()->back();
+        $info = \App\Note::where('id', $note)->first();
+        return view('note.show')->with(compact('info'));
     }
 
     public function destroy($note) {
