@@ -1,0 +1,1 @@
+# Ontario Tech: Cloud Computing Assignment 1 - Cloud Note
