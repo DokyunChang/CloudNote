@@ -21,7 +21,6 @@ class CreateNotesTable extends Migration
             $table->foreign('tag_id')->references('id')->on('tags');
             $table->string('title');
             $table->text('body');
-            $table->timestamps();
         });
     }
 
